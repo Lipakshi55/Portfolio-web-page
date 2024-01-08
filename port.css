@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+    background-color: black;
+    height: 690px;
+    overflow: hidden;
+}
+.navbar ul li{
+    float: left;
+    margin: 60px 80px 70px 100px;
+    font-size: 20px;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 25px;
+}
+.navbar ul li a:hover{
+  color: cadetblue;
+  border-bottom: 5px solid rgb(5, 46, 47);
+  transition: ease-in;
+  transition-delay: 0.1s;
+  transition-duration: 0.2s;
+}
+.left-text{
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    margin-left: 120px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img{
+    margin-left:66% ;
+    
+}
+.img img
+{
+    height: 400px;
+    margin-left: 30px;
+    margin-top: 1px;
+    width: 50%;
+   
+}
+.hello-text{
+    color: rgb(3, 59, 61);
+}
+.webdev{
+    border-bottom: 4px solid rgb(28, 105, 108);
+    padding-bottom: 20px;
+}
+.name{
+ animation: name_animation 2s infinite;
+}
+@keyframes name_animation{
+    from{ color: cadetblue}
+    to{color: rgb(13, 57, 59)}
+    
+}
+section{
+    padding: 3ren 0;;
+}
+section.project{
+    height: 600px;
+    background-color: white;
+    border-bottom: 5px solid darkcyan;
+}
+.heading{
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation:heading-animation 5s infinite;
+}
+@keyframes heading-animation{
+    25%{}
+    50%{color:rgb(67, 94, 94)}
+    75%{color: rgb(14, 73, 73);}
+}
+.project-image{
+    margin: 20px 0;
+}
+.projects img{
+  width: 23%;
+  height: 250px;
+  margin-top: 3%;
+  border:8px solid rgb(149, 172, 173);
+  box-shadow: 10px 10px 8px #727272;
+  margin-left: 20px;
+
+}
+.projects img:hover{
+    transform: scale(1.09);
+    animation: border-animation 0.9s infinite;
+}
+@keyframes border-animation{
+    25%{border-bottom: 8px solid rgb(67, 94, 94);}
+    50%{border-right: 8px solid rgb(67, 94, 94);}
+    75%{border-top: 8px solid rgb(67, 94, 94);}
+    100%{border-left: 8px solid rgb(67, 94, 94);}
+}
+.project-title h2{
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 25px;
+   
+}
+.project-title .t1{
+margin-left: 6%;
+}
+.project-title .t2{
+    margin-left: 10%;
+}
+.project-title .t3{
+    margin-left: 11%;
+}
+.project-title .t4{
+    margin-left: 13%;
+}
+section.services{
+    height: 740px;
+    background-color: #110f0f;
+    border-bottom: 5px solid darkcyan;
+}
+.services.heading{
+    color: white;
+}
+.all-services{
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:1rem ;
+    grid-row-gap: 5rem;
+}
+.all-services .image-grid img{
+    border:8px solid rgb(56,52,52);
+    margin-left:50px ;
+    border-radius: 50px;
+}
+.all-services .image-grid img:hover{
+    border: 8px solid white;
+}
+.all-services .image-grid p{
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+section.about-me{
+    height: 600px;
+}
+.left-image{
+    height: 0;
+}
+.left-image img{
+    width: 25%;
+    height: 450px;
+    margin-top: 4%;
+    margin-left: 130px;
+}
+.right-text{
+    margin-left: 40%;
+    text-align: center;
+    margin-top: 10%;
+    line-height: 49px;
+    font-size: 25px;
+}
+.myname{
+    font-size: 50px;
+    color: darkcyan;
+}
+.icons{
+    transform: translatey(-50%);
+    left: 0px;
+    float: right;
+    width: 50px;
+    margin-top: 20%;
+    margin-right: 130px;
+    z-index: 1;
+}
+.icons img{
+ margin-bottom: 20px;
+}
+.icons img:hover{
+    transform: rotate(50deg);
+    transition: ease-in;
+    transition-duration: 1s;
+}
+section.contact-me{
+ margin-top:10%;
+  height: 700px;
+  background-color: black;
+  border-bottom: 5px solid darkcyan;
+}
+.contact-div .heading{
+    color: white;
+}
+.right-img{
+    float: right;
+    margin-right:50px ;
+   
+}
+.right-img img{
+    margin-top: 10%;
+    height: 450px;
+    width: 500px;
+}
+::placeholder{
+    font-size: 20px;
+}
+.form-contact{
+    margin-left: 155px;
+    margin-top: 110px;
+}
+.input-box{
+    border: 1px solid #24285b;
+    margin: 6px 0;
+    height: 35px;
+    width: 40%;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    
+}
+
+.message{
+    border: 1px solid #24285b;
+    margin: 6px 0;
+   
+    width: 40%;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    resize: none;
+}
+.send{
+    width: 40%;
+    border: 1px solid #24285b;
+    margin: 33px 0 11px;
+    height: 32px;
+    padding: 0 10px;
+    border-radius: 20px;
+    font-size: 19px;
+     background: transparent;
+     color: white;
+     outline: none;
+     cursor: pointer;
+}
+.send:hover{
+    background-color: #24285b;
+    transition: all 0.3s ease-in;
+}
+
